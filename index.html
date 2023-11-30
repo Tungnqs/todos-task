@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/d0084e501f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <h1 class="header">todos</h1>
+        <div class="form-group">
+            <form action="" onsubmit="inputRow(event)">
+                <div class="todo-input">
+                    <p><i class="fa-solid fa-caret-down" onclick="selectAll()" id="select-all-btn"></i></p>
+                    <input placeholder="What need to be done?" id="input-task" type="text" value="">
+                </div>
+            </form>
+            <div class="todo-list" id="items-list">
+                <!-- <div class="items-in-list">
+                    <form class="todo-list-items" onsubmit="noReload(event)">
+                        <div data-checked="false" onclick="checkCompleted(this)">
+                            <i class="fa-solid fa-check"></i>
+                        </div>
+                        <input type="text" name="" id="" value="sdlnasdlk">
+                        <p class="row-del-btn"><i class="fa-solid fa-xmark" onclick="deleteRow(this)"></i></p>
+                    </form>
+                </div> -->
+            </div>
+            <div class="form-footer">
+                <div>
+                    <p id="item-left">
+                        
+                    </p>
+                </div>
+                <div class="filter-group">
+                    <p class="btn-all" onclick="displayAll()">
+                        All
+                    </p>
+                    <p class="rest-btn" onclick="displayActivate()">
+                        Active
+                    </p>
+                    <p class="rest-btn" onclick="displayCompleted()">
+                        Completed
+                    </p>
+                </div>
+                <div class="clear-completed">
+                    <p onclick="deleteCheckedItems()">Clear completed</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
